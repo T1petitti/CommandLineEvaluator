@@ -21,10 +21,8 @@ def setToken(value):
         case "/":
             return "div"
         case _:
-            if value.isdigit():
-                return "num"
-            else:
-                raise ValueError(f"Invalid token: {value}")
+            return "num"
+
 
 
 def tokenize(src):
